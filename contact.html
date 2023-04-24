@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fichier css bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!--Mon fichier css-->
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+
+    <title>Contact Beka</title>
+
+    <!--Inclure un style sur le fichier html-->
+    <style>
+        body {
+
+            padding: 25px;
+            background-image: url(/assets/img/forest-3437424_640.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+            font-family: 'Fira Mono', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        .header-contact {
+            height: 50px;
+        }
+
+        /*Rajouter un filre au logo*/
+        .header-contact .logo {
+            filter: grayscale(70%);
+        }
+
+        .container {
+            width: 95%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Fira Mono', monospace;
+            font-weight: bold;
+
+        }
+
+        span {
+            color: #f9893e;
+            font-size: 5rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            span {
+                font-size: 3rem;
+            }
+
+        }
+
+        form {
+            width: 55%;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+
+        .btn {
+            width: 40%;
+            text-align: center;
+            background-color: #f9893e89;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Reprendre le logo pour le header-->
+    <header class="header-contact">
+        <div class="logo clip">
+            <a href="#">
+                <img class="clipa"
+                    style="width: 70px; border-radius: 100%;mix-blend-mode: hard-light;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);"
+                    src="/assets/img/332105882_197811889520905_4939455696532375430_n.png" alt="logo">
+
+                <div id="clipb" class="clip"></div>
+            </a>
+        </div>
+    </header>
+
+    <main class="container py-5 justify-content-center align-items-center">
+        <h1>Nous <span>Contacter</span></h1>
+
+        <form>
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text" class="form-control bg-transparent border-left-0 border-right-0 border-top-0"
+                    id="name" placeholder="Entrez votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" class="form-control bg-transparent border-left-0 border-right-0 border-top-0"
+                    id="email" placeholder="Entez votre adress mail" required>
+            </div>
+            <div class="form-group">
+                <label for="message"></label>
+                <textarea class="form-control bg-transparent border-left-0 border-right-0 border-top-0" id="message"
+                    rows="5" placeholder="Votre message ici" required></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </main>
+
+    <footer>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto ">
+                        <li class="nav-item pe-5">
+                            <a class="nav-link" href="/html/index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a class="nav-link" href="#">Articles</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a class="nav-link" href="#">Programme</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a class="nav-link" href="#">Galerie</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <!-- Inclure les fichiers JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
